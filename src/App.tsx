@@ -6,6 +6,8 @@ import MainStack from './navigation/MainStack';
 import { enableScreens } from 'react-native-screens';
 import { StyleSheet, useColorScheme } from 'react-native';
 import { DarkTheme, LightTheme } from '@navigation/themes';
+import { Provider } from 'react-redux';
+import { store } from '@store';
 
 enableScreens(true);
 
@@ -13,15 +15,17 @@ const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <GestureHandlerRootView style={styles.container}>
-      <SystemBars
-        animated={true}
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-      />
-      <NavigationContainer theme={isDarkMode ? DarkTheme : LightTheme}>
-        <MainStack />
-      </NavigationContainer>
-    </GestureHandlerRootView>
+    <Provider store={store}>
+      <GestureHandlerRootView style={styles.container}>
+        <SystemBars
+          animated={true}
+          barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        />
+        <NavigationContainer theme={isDarkMode ? DarkTheme : LightTheme}>
+          <MainStack />
+        </NavigationContainer>
+      </GestureHandlerRootView>
+    </Provider>
   );
 };
 

@@ -13,7 +13,9 @@
       "@store": ["./store"],
       "@store/*": ["./store/*"],
       "@screens": ["./screens"],
-      "@screens/*": ["./screens/*"]
+      "@screens/*": ["./screens/*"],
+      "@hooks": ["./hooks"],
+      "@hooks/*": ["./hooks/*"]
     }
   }
 }

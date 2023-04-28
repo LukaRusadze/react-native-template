@@ -10,7 +10,8 @@
           "@navigation": "./src/navigation",
           "@primitives": "./src/primitives",
           "@screens": "./src/screens",
-          "@store": "./src/store"
+          "@store": "./src/store",
+          "@hooks": "./src/hooks"
         }
       }
     ]

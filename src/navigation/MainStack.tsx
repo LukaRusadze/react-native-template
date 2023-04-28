@@ -1,5 +1,5 @@
-import { createStackNavigator } from '@react-navigation/stack';
 import React, { useState } from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
 import { StackParamList } from './types';
 
 import { HomeScreen, ProfileScreen } from '@screens/AfterAuth';
