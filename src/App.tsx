@@ -1,15 +1,21 @@
 import { NavigationContainer } from '@react-navigation/native';
-import React, { useState } from 'react';
+import React from 'react';
 import { SystemBars } from 'react-native-bars';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import MainStack from './navigation/MainStack';
+import { enableScreens } from 'react-native-screens';
+
+enableScreens(true);
 
 const App = () => {
-  const [isSignedIn, setIsSignedIn] = useState(false);
-
   return (
-    <>
+    // eslint-disable-next-line react-native/no-inline-styles
+    <GestureHandlerRootView style={{ flex: 1 }}>
       <SystemBars barStyle={'dark-content'} />
-      <NavigationContainer>{isSignedIn ? <></> : <></>}</NavigationContainer>
-    </>
+      <NavigationContainer>
+        <MainStack />
+      </NavigationContainer>
+    </GestureHandlerRootView>
   );
 };
 
