@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { StackParamList } from './types';
 
 import { HomeScreen, ProfileScreen } from '@screens/AfterAuth';
 import { LoginScreen, RegisterScreen } from '@screens/BeforeAuth';
+import { StackParamList } from '@navigation';
 
 const Stack = createStackNavigator<StackParamList>();
 
