@@ -15,7 +15,10 @@
       "@screens": ["./screens"],
       "@screens/*": ["./screens/*"],
       "@hooks": ["./hooks"],
-      "@hooks/*": ["./hooks/*"]
+      "@hooks/*": ["./hooks/*"],
+      "@assets/*": ["../assets/*"],
+      "@constants": ["./constants"],
+      "@constants/*": ["./constants/*"]
     }
   }
 }
