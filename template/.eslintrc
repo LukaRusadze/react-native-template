@@ -1,6 +1,6 @@
 {
   "root": true,
-  "extends": "@react-native-community",
+  "extends": "@react-native",
   "rules": {
     "object-curly-spacing": "off",
     "@typescript-eslint/no-unused-vars": "warn"
