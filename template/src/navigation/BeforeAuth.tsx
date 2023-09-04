@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypedStackNavigator } from './MainStack';
-import { LoginScreen, RegisterScreen } from '@screens/BeforeAuth';
+import { LoginScreen, RegisterScreen } from '~/screens/BeforeAuth';
 
 interface Props {
   Stack: TypedStackNavigator;

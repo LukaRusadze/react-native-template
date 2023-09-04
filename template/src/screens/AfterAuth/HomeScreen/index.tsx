@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native';
 import React from 'react';
-import { MainStackScreenProps } from '@navigation';
+import { MainStackScreenProps } from '~/navigation';
 
 type Props = MainStackScreenProps<'Home'>;
 

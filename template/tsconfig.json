@@ -2,23 +2,10 @@
   "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
     "skipLibCheck": true,
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths": {
-      "@components": ["./components"],
-      "@components/*": ["./components/*"],
-      "@navigation": ["./navigation"],
-      "@navigation/*": ["./navigation/*"],
-      "@primitives": ["./primitives"],
-      "@primitives/*": ["./primitives/*"],
-      "@store": ["./store"],
-      "@store/*": ["./store/*"],
-      "@screens": ["./screens"],
-      "@screens/*": ["./screens/*"],
-      "@hooks": ["./hooks"],
-      "@hooks/*": ["./hooks/*"],
-      "@assets/*": ["../assets/*"],
-      "@constants": ["./constants"],
-      "@constants/*": ["./constants/*"]
+      "~/*/": ["./src/*/"],
+      "~/*": ["./src/*"]
     }
   }
 }

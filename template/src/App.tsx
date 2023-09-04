@@ -5,8 +5,8 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { enableScreens } from 'react-native-screens';
 import { StyleSheet, useColorScheme } from 'react-native';
 import { Provider } from 'react-redux';
-import { store } from '@store';
-import { DarkTheme, LightTheme, MainStack } from '@navigation';
+import { store } from '~/store';
+import { DarkTheme, LightTheme, MainStack } from '~/navigation';
 
 enableScreens(true);
 

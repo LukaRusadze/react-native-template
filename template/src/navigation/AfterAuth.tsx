@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypedStackNavigator } from './MainStack';
-import { HomeScreen, ProfileScreen } from '@screens/AfterAuth';
+import { HomeScreen, ProfileScreen } from '~/screens/AfterAuth';
 
 interface Props {
   Stack: TypedStackNavigator;

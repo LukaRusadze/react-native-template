@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { StackParamList } from '@navigation';
+import { StackParamList } from '~/navigation';
 import AfterAuth from './AfterAuth';
 import BeforeAuth from './BeforeAuth';
 
